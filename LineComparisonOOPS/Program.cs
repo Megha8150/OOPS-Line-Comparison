@@ -2,6 +2,20 @@
 using LineComparisonOOPS;
 //LineComparison.lineComparison();
 
-LineComparison line = new LineComparison();
-double length1= line.length();
-Console.WriteLine(length1);
+LineComparison line1 = new LineComparison();
+LineComparison line2 = new LineComparison();
+
+Double length1 = line1.length();
+Console.WriteLine("Enter Values for line2");
+Double length2 = line2.length();
+Console.WriteLine("Length of line 1 is " +length1);
+Console.WriteLine("Length of line 2 is " +length2);
+
+if(length1.Equals(length2))
+{
+    Console.WriteLine("lines are equal");
+}
+else
+{
+    Console.WriteLine("lines are not equal");
+}
