@@ -15,7 +15,11 @@ if(length1.Equals(length2))
 {
     Console.WriteLine("lines are equal");
 }
-else
+else if (length1.CompareTo(length2) < 0)
 {
-    Console.WriteLine("lines are not equal");
+    Console.WriteLine("Line 2 is greater");
+}
+else 
+{
+    Console.WriteLine("Line 1 is greater");
 }
